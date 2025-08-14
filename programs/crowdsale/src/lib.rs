@@ -22,5 +22,7 @@ pub mod crowdsale {
     }
 
     // Where the owner can withdraw Solana
-
+    pub fn withdraw(ctx: Context<Withdraw>) -> Result<()> {
+        instructions::withdraw(ctx)
+    }
 }
